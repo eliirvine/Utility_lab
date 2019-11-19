@@ -15,3 +15,9 @@ def UpdateString(str_1, str_2, index):
     second_half = str_1[index+1:]
     updated_str = first_half + str_2 + second_half
     PrintOutput(updated_str)
+
+def FindWordCount(my_list, my_str):
+    content_str = ''.join(my_list)
+    PrintOutput(str(content_str.count(my_str)))
+    
+    
