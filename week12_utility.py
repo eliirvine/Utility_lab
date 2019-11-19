@@ -19,5 +19,14 @@ def UpdateString(str_1, str_2, index):
 def FindWordCount(my_list, my_str):
     content_str = ''.join(my_list)
     PrintOutput(str(content_str.count(my_str)))
+
+def ScoreFinder(list_1, list_2, a_string):
+    word = a_string.capitalize()
+    for index, name in enumerate(list_1):
+        if name == word:
+            print('OUTPUT %s got a score of %d' % (name, list_2[index]))
+        if word not in list_1:
+            print('OUTPUT player not found')
+            break
     
     
