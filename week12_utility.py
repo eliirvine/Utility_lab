@@ -28,5 +28,17 @@ def ScoreFinder(list_1, list_2, a_string):
         if word not in list_1:
             print('OUTPUT player not found')
             break
+
+def Union(part_1, part_2):
+    return part_1 + part_2
+
+def Intersection(list_1, list_2):
+    new_list = []
+    for i in list_1:
+        if i in list_2:
+            new_list.append(i)
+    return new_list
+
+
     
     
