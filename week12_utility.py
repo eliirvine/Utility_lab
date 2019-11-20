@@ -18,7 +18,7 @@ def UpdateString(str_1, str_2, index):
 
 def FindWordCount(my_list, my_str):
     content_str = ''.join(my_list)
-    PrintOutput(str(content_str.count(my_str)))
+    return str(content_str.count(my_str))
 
 def ScoreFinder(list_1, list_2, a_string):
     word = a_string.capitalize()
@@ -44,8 +44,5 @@ def NotIn(list_1, list_2):
     for i in list_1:
         if i not in list_2:
             new_list.append(i)
-    for j in list_2:
-        if j not in list_1:
-            new_list.append(j)
     return new_list  
     
